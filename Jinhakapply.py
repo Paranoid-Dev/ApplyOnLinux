@@ -13,5 +13,5 @@ chrome.execute_cdp_cmd("Network.setUserAgentOverride",
 chrome.get("https://applymem.jinhakapply.com/Login")
 
 
-input("Press any key to quit")
+input("Press 'Enter' key to quit")
 chrome.quit()
