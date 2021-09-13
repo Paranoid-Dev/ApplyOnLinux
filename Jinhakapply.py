@@ -7,7 +7,7 @@ chrome = webdriver.Chrome(options=options, executable_path='./chromedriver')
 ogagent = chrome.execute_script("return navigator.userAgent")
 chrome.execute_cdp_cmd("Network.setUserAgentOverride",
 	{
-		"userAgent": re.sub('\(.*?\)', '(Windows NT 10.0; Win64; x64)', ogagent, 1),
+		"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
 	},
 		)
 chrome.get("https://applymem.jinhakapply.com/Login")
